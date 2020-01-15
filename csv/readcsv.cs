@@ -3,19 +3,29 @@ using CsvHelper.Configuration;
 using CsvHelper.TypeConversion;
 using System.Collections.Generic;
 using System.IO;
+using ReadWriteLib;
 
 namespace csv
 {
     public class readcsv
     {
-        public static void Main()
-        {
-            var path = "c://csvfiles//worldcities.csv";
-            var recordList = ReadInCSV(path);
-        }
 
-        public static List<City> ReadInCSV(string absolutePath)
+        // public static void Main()
+        // {
+
+        //   var path = "c://csvfiles//worldcities.csv";
+        //  var recordList = ReadInCSV(path);
+        //object c = City.FullName;
+        // var recordList2 = ReadLib.ReadInCSV(path,(object) City.FullName);
+
+        // }
+
+
+        
+
+        public static List<City> ReadInCSV(string absolutePath, object c)
         {
+           
             List<City> result = new List<City>();
             using (var reader = new StreamReader(absolutePath))
             {
@@ -34,10 +44,26 @@ namespace csv
                 return result;
             }
         }
+      
     }
+    public interface icity {
 
-    public class City
+        public string Fullname(string a);
+    }
+    public class City:icity
     {
+        private dynamic result;
+        City c = new City();
+        public string Fullname(string a) {
+
+            var path = "c://csvfiles//worldcities.csv";
+            result =csv.readcsv.ReadInCSV(path,c);
+            return result;
+        }
+
+       // public static string FullName {
+       //     get { return typeof(City).FullName;}
+       // }
         public string City_name { get; set; }
         public string City_ascii { get; set; }
         public double Lat { get; set; }

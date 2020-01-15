@@ -12,7 +12,19 @@ namespace csv.Tests
         [TestMethod()]
         public void MainTest()
         {
-            readcsv.Main();
+            //readcsv.Main();
+           // Assert.AreEqual('City',City.FullName());
+        }
+
+        [TestMethod()]
+        public void MainTest1()
+        {
+            Assert.Fail();
+        }
+
+        [TestMethod()]
+        public void ReadInCSVTest()
+        {
             Assert.Fail();
         }
     }

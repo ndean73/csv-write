@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csvfiles", "csvfiles", "{B0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csvTests", "csvTests\csvTests.csproj", "{7D4ECEBF-1B1F-4B5B-B455-9E236476665E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{824C2F3E-0F16-441D-93E5-C9711FFF312F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

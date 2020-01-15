@@ -8,4 +8,13 @@
     <PackageReference Include="CsvHelper" Version="12.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="csv">
+      <HintPath>..\..\..\ReadWriteLib\bin\Debug\netcoreapp3.1\csv.dll</HintPath>
+    </Reference>
+    <Reference Include="ReadWriteLib">
+      <HintPath>..\..\..\ReadWriteLib\bin\Debug\netcoreapp3.1\ReadWriteLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
